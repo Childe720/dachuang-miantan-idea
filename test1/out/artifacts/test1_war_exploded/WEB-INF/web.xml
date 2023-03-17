@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <welcome-file-list>
+        <!-- index.html替换为新的默认主页文件路径及文件名 -->
+        <welcome-file>templates/login.html</welcome-file>
+    </welcome-file-list>
+    <!-- ================  drug begin =================           -->
+    <servlet>
+        <servlet-name>drug_file_servlet_action</servlet-name>
+        <servlet-class>drug.file.drugServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>drug_file_servlet_action</servlet-name>
+        <url-pattern>/drug_file_servlet_action</url-pattern>
+    </servlet-mapping>
+    <!-- ================  drug end =================           -->
+
+
+</web-app>
